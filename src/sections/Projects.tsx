@@ -39,14 +39,8 @@ const portfolioProjects = [
         title:
           "React was used to create a dynamic, component-based structure, ensuring scalability and ease of maintenance.",
       },
-      {
-        title:
-          "Tailwind CSS provided a highly customizable and responsive design, allowing for rapid UI development while maintaining the brand's aesthetic.",
-      },
-      {
-        title:
-          "The project involved converting design mockups into functional components, ensuring pixel-perfect alignment with the original design",
-      },
+      { title: "Tailwind CSS provided a highly customizable and responsive design, allowing for rapid UI development while maintaining the brand's aesthetic." ,},
+      { title: "The project involved converting design mockups into functional components, ensuring pixel-perfect alignment with the original design" },
     ],
     liveLink: "https://nike-landing-page-ten-sigma.vercel.app/",
     githubLink: "https://github.com/geekfreak123/Nike_Landing_Page",
