@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import Qkart from "@/assets/images/Qkart.png";
+import nikeLandingPage from "@/assets/images/nike-landing-page.png";
+import XBoard from "@/assets/images/XBoard.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,49 +10,70 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Crio.Do",
+    title: "Qkart",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          " Implemented the core logic for authentication, shopping cart and checkout",
+      },
+      {
+        title:
+          "Improved UI by adding responsive design elements for uniform experience across different devices",
+      },
+      {
+        title:
+          "Utilized REST APIs to dynamically load and render data served by the backend server",
+      },
     ],
-    liveLink: "https://youtu.be/4k7IdSLxh6w",
-    githubLink: "",
-    image: darkSaasLandingPage,
+    liveLink: "https://rohan-sonawane-qkart-frontend.vercel.app/",
+    githubLink:
+      "https://github.com/geekfreak123/sonawanerohan502-ME_QKART_FRONTEND_V2",
+    image: Qkart,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Self-made",
+    title: "Nike Landing Page",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      {
+        title:
+          "React was used to create a dynamic, component-based structure, ensuring scalability and ease of maintenance.",
+      },
+      {
+        title:
+          "Tailwind CSS provided a highly customizable and responsive design, allowing for rapid UI development while maintaining the brand's aesthetic.",
+      },
+      {
+        title:
+          "The project involved converting design mockups into functional components, ensuring pixel-perfect alignment with the original design",
+      },
     ],
-    liveLink: "https://youtu.be/7hi5zwO75yc",
-    githubLink: "",
-    image: lightSaasLandingPage,
+    liveLink: "https://nike-landing-page-ten-sigma.vercel.app/",
+    githubLink: "https://github.com/geekfreak123/Nike_Landing_Page",
+    image: nikeLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Crio.Do",
+    title: "XBoard",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title: "Utilized the figma file to understand the design requirements",
+      },
+      { title: "Used Accordions and Image Carousel to improve UI" },
+      {
+        title: "Fetched news content from flipboard's RSS feed using REST API",
+      },
     ],
-    liveLink: "https://youtu.be/Z7I5uSRHMHg",
-    githubLink: "",
-    image: aiStartupLandingPage,
+    liveLink: "https://xboard-rohan123.netlify.app/",
+    githubLink:
+      "https://github.com/geekfreak123/sonawanerohan502-ME_BUILDOUT_XBOARD",
+    image: XBoard,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Projects"
@@ -60,10 +81,13 @@ export const ProjectsSection = () => {
           description="See how I transform concepts into digital experiences."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
