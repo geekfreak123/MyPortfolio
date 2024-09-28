@@ -15,7 +15,7 @@ const portfolioProjects = [
     results: [
       {
         title:
-          " Implemented the core logic for authentication, shopping cart and checkout",
+          "Implemented the core logic for authentication, shopping cart and checkout",
       },
       {
         title:
@@ -39,8 +39,14 @@ const portfolioProjects = [
         title:
           "React was used to create a dynamic, component-based structure, ensuring scalability and ease of maintenance.",
       },
-      { title: "Tailwind CSS provided a highly customizable and responsive design, allowing for rapid UI development while maintaining the brand's aesthetic." ,},
-      { title: "The project involved converting design mockups into functional components, ensuring pixel-perfect alignment with the original design" },
+      {
+        title:
+          "Tailwind CSS provided a highly customizable and responsive design, allowing for rapid UI development while maintaining the brand's aesthetic.",
+      },
+      {
+        title:
+          "The project involved converting design mockups into functional components, ensuring pixel-perfect alignment with the original design",
+      },
     ],
     liveLink: "https://nike-landing-page-ten-sigma.vercel.app/",
     githubLink: "https://github.com/geekfreak123/Nike_Landing_Page",
@@ -80,7 +86,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px`,
+                top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -101,7 +107,11 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col md:flex-row gap-6 mt-8">
-                    <a href={project.liveLink}>
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                         <span className="text-center lg:text-sm">
                           Visit Live Site
@@ -109,7 +119,11 @@ export const ProjectsSection = () => {
                         <ArrowUpRightIcon className="size-4" />
                       </button>
                     </a>
-                    <a href={project.githubLink}>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <button
                         className="bg-white text-gray-950 h-12 w-full
                         md:w-auto px-16 rounded-xl font-semibold inline-flex items-center justify-center"
