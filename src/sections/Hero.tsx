@@ -1,4 +1,4 @@
-import memojiImage from "@/assets/images/memoji-computer.png";
+boldimport memojiImage from "@/assets/images/memoji-computer.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
@@ -119,7 +119,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-xl md:text-3xl text-center mt-8 tracking-wide">
-            Hi there I'm <span className="font-serif tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-3xl md:text-5xl">Rohan Sonawane</span> 👋
+            Hi there I'm <span className="font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-3xl md:text-5xl">Rohan Sonawane</span> 👋
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in creating responsive, dynamic web pages with a focus
