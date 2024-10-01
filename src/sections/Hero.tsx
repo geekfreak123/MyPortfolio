@@ -1,4 +1,4 @@
-boldimport memojiImage from "@/assets/images/memoji-computer.png";
+import memojiImage from "@/assets/images/memoji-computer.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
@@ -130,7 +130,7 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center md:flex-row justify-center mt-8 gap-4">
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl  hover:bg-white/10 hover:text-white transition duration-300 z-20"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/10 hover:text-white transition duration-300 z-20"
           >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
