@@ -118,8 +118,8 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building exceptional user experiences
+          <h1 className="font-serif text-2xl md:text-4xl text-center mt-8 tracking-wide">
+            Hi there I'm <span className="bg-gradient-to-r from-emerald-300 to-sky-400 text-3xl md:text-5xl">Rohan Sonawane</span> 👋
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in creating responsive, dynamic web pages with a focus
